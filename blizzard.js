@@ -20,27 +20,34 @@ function fetchResults(e){
 }
 
 function displayResults(json){
-
+    console.log('hey')
+    
     while (section.firstChild) {
         section.removeChild(section.firstChild);
     }
-
-
-for (let i = 0; i < json.bosses.length; i++){
     
-    if (json.bosses[i].name == searchTerm.value){
+    descBox.innerHTML = "Boss Not Found";
+    statBox.innerHTML = "Boss Not Found";
+    
+    for (let i = 0; i < json.bosses.length; i++){
        
-        if (json.bosses[i].name !== searchTerm.value){
-            descBox.innerHTML = "Boss Does Not Exist";
-        } else {
-            descBox.innerHTML = json.bosses[i].description;
-        }
-        let rname = "Name: " + json.bosses[i].name;
-        let level = "Level: " + json.bosses[i].level;
-        let health = "Health: " + json.bosses[i].health;
-        let heroicHealth = "Heroic Health: " + json.bosses[i].heroicHealth;
-            
-        statBox.innerHTML = rname + '<br>' + level + '<br>' + health + '<br>' + heroicHealth;
-    }
+    
+
+
+        if (json.bosses[i].name == searchTerm.value){
+            console.log("one:",json.bosses[i].name)
+            console.log("two:",searchTerm.value)
+       
+                    
+                    
+                    let rname = "Name: " + json.bosses[i].name;
+                    let level = "Level: " + json.bosses[i].level;
+                    let health = "Health: " + json.bosses[i].health;
+                    let heroicHealth = "Heroic Health: " + json.bosses[i].heroicHealth;
+                    
+                    descBox.innerHTML = json.bosses[i].description;
+                    statBox.innerHTML = rname + '<br>' + level + '<br>' + health + '<br>' + heroicHealth;
+                } 
+                
   }
 }
