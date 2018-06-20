@@ -1,39 +1,49 @@
-body {
-    /* border: solid 1px black; */
-    background: url("http://jonvilma.com/images/world-of-warcraft-legion-4.jpg") no-repeat;
-    color: red;
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    
 }
-
-.wrapper {
-    /* border: solid 1px green; */
+.wrapper{
+    z-index: 2;
+    position: relative;
 
 }
 .searchbar {
     display: inline-block;
     text-align: center;
-    margin-left: 30%;
-    font-family: "Orbitron", sans-serif;
+    margin-left: 38%;
+    margin-bottom: 40%;
+  
+    
   
 }
 .results {
-    /* border: solid 1px red; */
     display: flex;
     padding-top: 0%;
     font-family: 'Orbitron', sans-serif;
 }
-form {
-    background: #00A359;
-    color: black;
+form { 
+    background:rgba(0,0,0,0.4);
+    color: #00BFFF;
     font-family: 'Orbitron', sans-serif;
 }
 .description {
+    vertical-align: bottom;
     border: solid 5px black;
     border-radius: 250em 250em 250em 250em;
     display: inline-block;
     width: 50%;
     text-align: center;
-    background:#00A359;
+    background: rgba(0,0,0,0.4);
     font-family: 'Orbitron', sans-serif;
+    color: 	#00BFFF;
 }   
 .stats {
     border: solid 5px black;
@@ -41,6 +51,7 @@ form {
     display: inline-block;
     width: 50%;
     text-align: center;
-    background: #00A359;
+    background: rgba(0,0,0,0.4);
     font-family: "Orbitron", sans-serif;
+    color: 	#00BFFF;
 }

@@ -10,31 +10,41 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="searchbar">
-    <form>
-            <label for="search">Boss Name:</label>
-            <input type="text" id="search" class="search" required>
-        
-        <button class = "submit">Search</button>   
-    </form>
-    <img src="API-assets/images/wow.jpg">
-    </div>
-    <div class="results">
-         <div class = "description">
-            <h1>Description</h1>
-          <section class="desc">
+    <div class="container">
+        <video autoplay muted loop id="myVideo">
+                <source src="wow.mp4" type="video/mp4">
+                
+              </video>
 
-          </section>
-        </div>
-        <div class = "stats">
-            <h1>Stats</h1>
-            <section class="sta">
+              <div class="wrapper">
+                    <div class="searchbar">
+                <form>
+                        <label for="search">Boss Name:</label>
+                        <input type="text" id="search" class="search" required>
+                    
+                    <button class = "submit">Search</button>   
+                </form>
+                
+                </div>
+
+                <div class="results">
+                     <div class = "description">
+                        <h1>Description</h1>
+                      <section class="desc">
             
-        </section>
-    </div>
+                      </section>
+                    </div>
+                    <div class = "stats">
+                        <h1>Stats</h1>
+                        <section class="sta">
+                        
+                    </section>
+                </div>
+            </div>          
 </div>
     
+
 </body>
 <script type="text/javascript" src="blizzard.js"></script>
 </html>
+       
