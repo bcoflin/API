@@ -21,11 +21,8 @@
     margin-left: 38%;
     margin-bottom: 40%;  
 }
-#banner{
-    min-width: 100%;
-    
-    z-index: 2;
-}
+
+
 .results {
     display: flex;
     padding-top: 0%;
